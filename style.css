@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.menu {
+    width: 350px;
+    background-color: #2660A4;
+    color: #EDF7F6;
+    padding-left: 30px;
+}
+
+.menu .logo {
+    font-size: 50px;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+}
+
+.logo span {
+    color: #F19953;
+}
+
+ul.main-menu {
+    margin-bottom: 40px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.search {
+    font-size: 30px;
+    padding: 30px 4%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 30vw;
+    height: 30px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #E2E8F0;
+    margin-left: 10px;
+}
+
+.search-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.profile-name {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.search-bot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.big-profile-picture {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.text {
+    padding-left: 20px;
+}
+
+.profile strong{
+    font-size: 17px;
+}
+
+.profile h2 {
+    font-size: 25px;
+}
+
+.buttons {
+    align-items: center;
+}
+
+.buttons button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color:#2660A4;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0 auto;
+    padding: 2.5% 2%;
+    gap: 20px;
+    background-color: #E2E8F0;
+}
+
+.grid-info h2{
+    font-size: 20px;
+}
+
+.projects {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+}
+
+.projects h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 10px;
+}
+
+.project {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+    font-size: 20px;
+    background-color: white;
+    border-left: 10px solid #F0B429;
+}
+
+.project p{
+    margin-top: 5px;
+}
+
+.project-icons {
+    align-self: flex-end;
+}
+
+.project-icons span {
+    margin-left: 10px;
+}
+
+.announcements-container{
+    background-color: white;
+    margin-top: 10px;
+    padding: 30px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.trending-container {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.trending-container img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.trend {
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+}
+
+.trend-text {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .profile-name {
+        display: none;
+    }
+
+    .grid-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-info .projects {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .projects h2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .announcements {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .menu {
+        display: none;
+    }
+}
